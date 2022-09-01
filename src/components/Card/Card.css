@@ -1,0 +1,29 @@
+.Card {
+  display: flex;
+  flex: 1;
+  height: 0.1rem !important;
+  border-radius: 0.7rem;
+  color: white;
+  padding: 1rem;
+  position: relative;
+  cursor: pointer;
+  width: 4rem;
+}
+.Card:hover {
+  box-shadow: none !important;
+}
+
+/* Type Name */
+
+.typeName {
+  flex: 1 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.typeName > span {
+  font-size: 17px;
+  font-weight: bold;
+}
