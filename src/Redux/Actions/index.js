@@ -26,7 +26,6 @@ export function getPokemons(limit = 151, offset = 0) {
             }
           ))
       })
-      console.log(pokemons)
     return dispatch({
       type: 'GET_POKEMONS',
       payload: pokemons
@@ -39,13 +38,12 @@ export function getTypes() {
     try {
       let types = await axios.get("https://pokeapi.co/api/v2/type");
       let typesNames = types.data.results.map(type => type.name).filter(type => type !== "shadow" && type !== "unknown");
-      console.log(typesNames);
       return dispatch({
         type: 'GET_TYPES',
         payload: typesNames
       });
     } catch (e) {
-      console.log(e);
+      console.error(e);
     }
   }
 }
