@@ -250,6 +250,13 @@ export const Colors = [
       boxShadow: "0px 10px 20px 0px #e0d7e0",
     },
   },
+  {
+    name: "stellar",
+    color: {
+      backGround: "linear-gradient(180deg, #dab4f3 0%, #dac3e6 100%)",
+      boxShadow: "0px 10px 20px 0px #e0d7e0",
+    },
+  },
 ];
 
 // Fun Facts Data

@@ -5,9 +5,9 @@ import "./FunFacts.css";
 const FunFacts = () => {
   return (
     <div className="Facts">
-      {funFactsList.map((fact) => {
+      {funFactsList.map((fact, index) => {
         return (
-          <div className="fact">
+          <div className="fact" key={index}>
             <img src={fact.img} alt="pokemonImg" />
             <div className="text">
               <div style={{ marginBottom: "0.5rem" }}>

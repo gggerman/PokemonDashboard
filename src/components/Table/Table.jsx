@@ -17,7 +17,7 @@ export default function BasicTable() {
   const dispatch = useDispatch();
   const allPokemons = useSelector((state) => state.pokemons);
   const [currentPage, setCurrentPage] = useState(1);
-  const [pokemonsPerPage, setPokemonsPerPage] = useState(6);
+  const [pokemonsPerPage] = useState(6);
   const indexOfLastPokemon = currentPage * pokemonsPerPage;
   const indexOfFirstPokemon = indexOfLastPokemon - pokemonsPerPage;
   const currentPokemons = allPokemons.slice(
